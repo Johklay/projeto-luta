@@ -1,14 +1,26 @@
-let log = new Log(document.querySelector('.log'));
+// let log = new Log(document.querySelector('.log'));
 
-let char = new Knight ('John');
-let monster = new BigMonster();
+// let char = new Knight ('John');
+// let monster = new BigMonster();
 
-const stage = new Stage(
+// const stage = new Stage(
+//     char,
+//     monster,
+//     document.querySelector('#char'),
+//     document.querySelector('#monster'),
+//     log
+// );
+
+// stage.start();
+
+
+const char = createKnight('John');
+const monster = createLittleMonster();
+
+stage.start(
     char,
     monster,
     document.querySelector('#char'),
     document.querySelector('#monster'),
-    log
 );
 
-stage.start();
